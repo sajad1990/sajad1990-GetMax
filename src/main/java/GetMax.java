@@ -6,7 +6,12 @@ public class GetMax {
      * @param arr an array of ints to be manipulated.
      * @return the largest value in arr.
      */
-    public int max(int[] arr){
-        return -1;
+    public int max(int[] arr){ int largest = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > largest) {
+                largest = arr[i];
+            }
+        }
+        return largest;
     }
 }
